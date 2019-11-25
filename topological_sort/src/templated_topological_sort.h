@@ -2,7 +2,7 @@
 #define TEMPLATEDTOPOLOGICALSORT_H
 
 #include <utility> 
-#include <map> 
+#include <unordered_map> 
 #include <vector>
 #include <stack>
 
@@ -25,7 +25,7 @@ private:
     //create adjacency list representation of the graph
     std::vector<std::vector<int>> adjacencyList;
     //map each node to an int in the range of [0,n) where n is the number of vertices]
-    std::map<T,int> nodeToIndex;  //used to acces adjacency list
+    std::unordered_map<T,int> nodeToIndex;  //used to acces adjacency list
     
     std::vector<visitState> nodeState;     //store node state for the DFS
     std::stack<T> sortedResults;         //store results
