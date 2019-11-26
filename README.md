@@ -1,4 +1,6 @@
-# templated-algorithms-cpp
+# Templated Algorithms
 
-Included algorithms: 
-  Topological Sort
+A repository to include some useful templated algorithms. 
+
+### Included Algorithms
+*  Topological Sort
